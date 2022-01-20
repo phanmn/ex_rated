@@ -97,7 +97,7 @@ defmodule ExRated do
       :ok
 
   """
-  @spec delete_bucket(id::String.t) :: :ok | :error
+  @spec delete_bucket(any) :: :ok | :error
   def delete_bucket(id) do
     GenServer.call(:ex_rated, {:delete_bucket, id})
   end
